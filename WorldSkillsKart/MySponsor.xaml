@@ -1,0 +1,88 @@
+﻿<Window x:Class="WorldSkillsKart.MySponsor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldSkillsKart"
+        mc:Ignorable="d"
+        Title="Kart Skills 2017" Height="600" Width="800" Loaded="Window_Loaded" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135*"/>
+            <RowDefinition Height="490*"/>
+            <RowDefinition Height="66*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#b4b4b4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="226*"/>
+                <ColumnDefinition Width="843*"/>
+                <ColumnDefinition Width="226*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock VerticalAlignment="Center" Text="Kart Skills 2017" TextAlignment="Center" FontSize="50" FontWeight="Bold" FontFamily="Open Sans Semibold" Grid.ColumnSpan="3" Height="60" Margin="0,4,-0.4,4"/>
+            <TextBlock VerticalAlignment="Center" Grid.Row="1" Text="Москва, Россия 20 июня 2017" TextAlignment="Center" FontSize="30"  FontFamily="Open Sans Semibold" Grid.ColumnSpan="3" Height="36" Margin="0,16,-0.4,15.2"/>
+            <Button Content="Logout" Grid.Column="2" Margin="40" Grid.RowSpan="2" Name="LogoutBTN" Click="LogoutBTN_Click" FontSize="30" BorderThickness="2"/>
+            <Button Content="Назад" Grid.Column="0" Margin="40" Grid.RowSpan="2" Name="BackBTN" Click="BackBTN_Click" FontSize="30" BorderThickness="2"/>
+        </Grid>
+        <Grid Background="#b4b4b4" Grid.Row="2">
+            <Label x:Name="Time" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25" FontFamily="Open Sans Semibold"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="9*"/>
+                <RowDefinition Height="32*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Мои спонсоры" TextAlignment="Center" FontSize="30" VerticalAlignment="Center" FontFamily="Open Sans Semibold" Height="36"/>
+            <TextBlock Name="AmountTB" Text="Всего $ 1881" Grid.Row="2" TextAlignment="Center" FontSize="40" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="Open Sans Semibold" Margin="0,9.6,228.6,1.8" Width="318"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.RowSpan="7" Grid.ColumnSpan="2" Margin="330,0,307.6,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Спонсор" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Text="Взнос" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor1" Text="Наименование 1" Grid.Row="1" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos1" Text="Взнос1" Grid.Row="1" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor2" Text="Наименование 2" Grid.Row="2" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos2" Text="Взнос2" Grid.Row="2" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor3" Text="Наименование 3" Grid.Row="3" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos3" Text="Взнос3" Grid.Row="3" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor4" Text="Наименование 4" Grid.Row="4" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos4" Text="Взнос4" Grid.Row="4" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor5" Text="Наименование 5" Grid.Row="5" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos5" Text="Взнос5" Grid.Row="5" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Sponsor6" Text="Наименование 6" Grid.Row="6" TextAlignment="Left" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                    <TextBlock Name="Vznos6" Text="Взнос6" Grid.Row="6" TextAlignment="Right" FontSize="30" Grid.Column="1" HorizontalAlignment="Right"  VerticalAlignment="Center" FontFamily="Open Sans Semibold"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="WorldSkillsKart.Charity"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldSkillsKart"
+        mc:Ignorable="d"
+        Title="Kart Skills 2017" Height="600" Width="800"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Background="#FFB4B4B4">
+            <TextBlock TextWrapping="Wrap" Text="Kart Skills 2017" Margin="-0.8,9.2,-0.2,0.2" FontFamily="./#Open Sans Semibold" TextAlignment="Center" FontSize="24"/>
+        </Border>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="794" Margin="0,526,-0.4,0" Background="#FFB4B4B4" />
+        <TextBlock HorizontalAlignment="Left" Margin="0,46,-0.4,0" TextWrapping="Wrap" Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" Height="30" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,526,-0.4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center" Name="Timer"/>
+        <TextBlock HorizontalAlignment="Left" Margin="182,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="440" FontSize="22" FontFamily="./#Open Sans Light" TextAlignment="Center" Text="Список благотворительных организаций"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="36,23,0,0" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.293,0.563" Height="32" FontFamily="./#Open Sans Light" FontSize="18" Click="Back"/>
+        <Image HorizontalAlignment="Left" Height="95" Margin="36,161,0,0" VerticalAlignment="Top" Width="95" Source="4783764986.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,161,0,0" TextWrapping="Wrap" Text="Фонд помощи животным &quot;Белый бим&quot;" VerticalAlignment="Top" Height="32" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,198,0,0" TextWrapping="Wrap" Text="Помощь бездомным собакам" VerticalAlignment="Top" Height="32" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="18"/>
+        <Image HorizontalAlignment="Left" Height="95" Margin="36,279,0,0" VerticalAlignment="Top" Width="95" Source="6482d3_0a3c692895c44d7a8869a2056764b31f~mv2.gif"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="22"><Run Text="Всемирный фонд "/><Run Text="дикой природы &quot;WWF&quot;"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="169,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="18"><Run Text="О"/><Run Text="хран"/><Run Text="а"/><Run Text=" редких и исчезающих видов животных"/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="95" Margin="36,390,0,0" VerticalAlignment="Top" Width="95" Source="AF1QipOs0zXJ_FyRT_Lhx4GQ8F1eTBnjaNRI1CU1tFof=s1600-w1390.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,390,0,0" TextWrapping="Wrap" Text="Благотворительный Фонд «Детские сердца»" VerticalAlignment="Top" Height="32" Width="615" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="169,428,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="18"><Run Text="О"/><Run Text="существляет адресную помощь детям с врожденными заболеваниями сердца от 0 до 18 лет."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="169,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="527" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="18"><Run FontFamily="/WorldSkillsKart;component/#Open Sans Light" Text="Охрана "/><Run FontFamily="/WorldSkillsKart;component/#Open Sans Light" Text="природных экосистем"/></TextBlock>
+    </Grid>
+</Window>

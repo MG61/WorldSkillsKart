@@ -1,0 +1,34 @@
+﻿<Window x:Class="WorldSkillsKart.Contacts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldSkillsKart"
+        mc:Ignorable="d"
+        Title="Contacts" Height="400" Width="650" Loaded="Window_Loaded" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="32*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Контакты" TextAlignment="Center" VerticalAlignment="Bottom" FontSize="25" FontFamily="Open Sans Semibold"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="285*"/>
+                <ColumnDefinition Width="358*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Телефон:" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="25" Height="33" FontFamily="Open Sans Semibold"/>
+            <TextBlock Name="TelephoneTB" Text="" Grid.Column="1" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="25" Height="33" FontFamily="Open Sans Semibold"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="235*"/>
+                <ColumnDefinition Width="408*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Email:"  FontWeight="Bold" FontFamily="Open Sans Semibold" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="25" Height="30" Margin="0,0,8.2,0" Width="127"/>
+            <TextBlock Name="EmailTB" Text="" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25" Grid.Column="1" FontFamily="Open Sans Semibold" />
+        </Grid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="36,23,0,0" VerticalAlignment="Top" Width="83" RenderTransformOrigin="0.293,0.563" Height="22" FontFamily="./#Open Sans Light" FontSize="14" Click="Back"/>
+    </Grid>
+</Window>

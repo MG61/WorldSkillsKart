@@ -1,0 +1,44 @@
+﻿<Window x:Class="WorldSkillsKart.RacerEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldSkillsKart"
+        mc:Ignorable="d"
+              Title="Kart Skills 2017" Height="600" Width="800"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Background="#FFB4B4B4">
+            <TextBlock TextWrapping="Wrap" Text="Kart Skills 2017" Margin="-0.8,9.2,-0.2,0.2" FontFamily="./#Open Sans Semibold" TextAlignment="Center" FontSize="24"/>
+        </Border>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="794" Margin="0,526,-0.4,0" Background="#FFB4B4B4" />
+        <TextBlock HorizontalAlignment="Left" Margin="0,46,-0.4,0" TextWrapping="Wrap" Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" Height="30" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,526,-0.4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center" Name="Timer"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="117,180,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="125,319,0,0" TextWrapping="Wrap" Text="Имя:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="86,359,0,0" TextWrapping="Wrap" Text="Фамилия:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="128,408,0,0" TextWrapping="Wrap" Text="Пол:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="455,347,0,0" TextWrapping="Wrap" Text="Дата рождения:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="525,390,0,0" TextWrapping="Wrap" Text="Страна:" VerticalAlignment="Top"/>
+        <TextBlock Text="Управление гонщиком" TextAlignment="Center" FontSize="18" VerticalAlignment="Center" FontFamily="Open Sans Semibold" Height="36" Margin="-1,112,0,423"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" FontSize="18" FontFamily="Open Sans Light" Margin="14,448,0,0" TextWrapping="Wrap" Text="Регистрационный статус" VerticalAlignment="Top" Width="212"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="98,229,0,0" TextWrapping="Wrap" Text="Пароль:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontFamily="Open Sans Light" Margin="7,271,0,0" TextWrapping="Wrap" Text="Повторите пароль:" VerticalAlignment="Top"/>
+        <Button x:Name="Logout" Content="Сохранить" Grid.Row="0" Margin="229,470,441,67" FontSize="18" FontFamily="Open Sans Light"  Click="Button_Logout" BorderThickness="2"/>
+        <Button x:Name="Cancel" Content="Отмена" Grid.Row="0" Margin="387,471,322,66" FontSize="18" FontFamily="Open Sans Light"  Click="Cancel_Click" BorderThickness="2"/>
+        <ComboBox x:Name="Combo_Status"  HorizontalAlignment="Right" VerticalAlignment="Center"  Width="183" Height="27" Margin="0,484,587,60" />
+        <ComboBox x:Name="Combo_Status_Copy"  HorizontalAlignment="Right" VerticalAlignment="Center"  Width="145" Height="20" Margin="0,410,477,141" />
+        <ComboBox x:Name="Combo_Status_Copy1"  HorizontalAlignment="Right" VerticalAlignment="Center"  Width="145" Height="29" Margin="0,384,55,158" />
+        <Image HorizontalAlignment="Left" Height="145" Margin="628,140,0,0" VerticalAlignment="Top" Width="101"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,180,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,229,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,272,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,319,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="172,360,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="464,285,0,0" TextWrapping="Wrap" Text="Фото файл:" FontSize="18" FontFamily="Open Sans Light" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="455,307,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="178"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="594,347,0,0" TextWrapping="Wrap" FontSize="18" FontFamily="Open Sans Light" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Logout_Copy1" Content="Просмотр" Grid.Row="0" Margin="644,307,48,237" FontSize="18" FontFamily="Open Sans Light"  Click="Button_Logout" BorderThickness="2"/>
+
+    </Grid>
+</Window>

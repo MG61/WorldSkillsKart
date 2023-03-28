@@ -1,0 +1,44 @@
+﻿<Window x:Class="WorldSkillsKart.RegisterKart"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:WorldSkillsKart"
+        mc:Ignorable="d"
+                Title="Kart Skills 2017" Height="600" Width="800"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0" Background="#FFB4B4B4">
+            <TextBlock TextWrapping="Wrap" Text="Kart Skills 2017" Margin="-0.8,9.2,-0.2,0.2" FontFamily="./#Open Sans Semibold" TextAlignment="Center" FontSize="24"/>
+        </Border>
+        <Border BorderBrush="#FFB4B4B4" BorderThickness="1" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="794" Margin="0,526,-0.4,0" Background="#FFB4B4B4" />
+        <TextBlock HorizontalAlignment="Left" Margin="0,46,-0.4,0" TextWrapping="Wrap" Text="Москва, Россия 20 июня 2017" VerticalAlignment="Top" Height="30" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="0,526,-0.4,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="794" FontFamily="./#Open Sans Light" FontSize="18" TextAlignment="Center" Name="Timer"/>
+        <TextBlock HorizontalAlignment="Left" Margin="296,104,0,0" TextWrapping="Wrap" Text="Регистрация гонщиков" VerticalAlignment="Top" Height="29" Width="213" FontSize="18" FontFamily="/WorldSkillsKart;component/#Open Sans Semibold" TextAlignment="Center"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="279,464,0,0" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.293,0.563" Height="32" FontFamily="./#Open Sans Light" FontSize="18" Click="register"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="419,464,0,0" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.293,0.563" Height="32" FontFamily="./#Open Sans Light" FontSize="18" Click="Back"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="30,23,0,0" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.293,0.563" Height="32" FontFamily="./#Open Sans Light" FontSize="18" Click="Back"/>
+        <TextBlock HorizontalAlignment="Left" Margin="8,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right"><Run Text="Emai"/><Run Text="l"/><Run Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="147,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" FontFamily="./#Open Sans Light" FontSize="18" Name="Email" Text="xxxxxxxx@xxxxxx.xxx"/>
+        <TextBlock HorizontalAlignment="Left" Margin="9,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" Text="Пароль:" TextAlignment="Right"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-1,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="143" TextAlignment="Right" ><Run Text="Пароль ещё раз"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="9,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right" ><Run Text="Имя"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="9,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right" ><Run Text="Фамилия"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="8,384,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right"><Run Text="Пол"/><Run Text=":"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="147,262,0,0" TextWrapping="Wrap" Text="Re-enter password" VerticalAlignment="Top" Width="204" FontFamily="./#Open Sans Light" FontSize="18" Name="re_password"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="147,220,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="204" FontFamily="./#Open Sans Light" FontSize="18" x:Name="password" />
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="147,304,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="204" FontFamily="./#Open Sans Light" FontSize="18" x:Name="Surname"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="147,344,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="204" FontFamily="./#Open Sans Light" FontSize="18" x:Name="Name"/>
+        <ComboBox HorizontalAlignment="Left" Margin="147,384,0,0" VerticalAlignment="Top" Width="204" Height="25" Name="Gender"/>
+        <TextBlock HorizontalAlignment="Left" Margin="469,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right" Text="Дата рождения:" />
+
+        <TextBlock HorizontalAlignment="Left" Margin="469,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="133" TextAlignment="Right" Text="Страна:" />
+        <ComboBox HorizontalAlignment="Left" Margin="623,384,0,0" VerticalAlignment="Top" Width="120" Name="Country" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="16"/>
+        <DatePicker HorizontalAlignment="Left" Margin="623,336,0,0" VerticalAlignment="Top" Width="120" Name="date" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="115" Margin="674,145,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="469,285,0,0" TextWrapping="Wrap" Text="Photo.jpg" VerticalAlignment="Top" Width="189" FontFamily="./#Open Sans Light" FontSize="18" x:Name="Surname_Copy"/>
+        <Button Content="Просмотр" HorizontalAlignment="Left" Margin="674,285,0,0" VerticalAlignment="Top" Width="86" Height="34" FontFamily="/WorldSkillsKart;component/#Open Sans Light" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="469,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="./#Open Sans Light" FontSize="18" Width="95" TextAlignment="Right" ><Run Text="Фото файл"/><Run Text=":"/></TextBlock>
+    </Grid>
+</Window>
